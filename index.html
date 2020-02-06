@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/section.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/general-style.css">
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        
+
+        
+
+    </head>
+    <body>
+
+        <header class="container-fluid menu">
+            <div class="row">
+                <aside class="col-md-6 col-sm-6 time-menu">
+                    <h1 class="horario">14:00</h1>
+                    <h3 class="programa">O Incrivel Mundo De Gumbal</h3>
+
+                </aside>
+                <aside class="col-md-5 col-sm-5">
+                    <img class="img-ads img-fluid" src='imgs/chegadebullyng.jpg'>
+
+                </aside>
+            </div>
+
+            <footer class="col-md-12 col-sm-12 footer-menu">
+                <div class="row">
+                    <figure class="logo col-md-6">
+                        <img src="imgs/logo.svg" alt="Logo Cartoon Network" >
+                    </figure>
+                    <form class="search col-md-6">
+                        <input type="text" placeholder="Procurar" class="input">
+                    </form>
+                </div>
+                
+
+                
+
+            </footer>
+
+        </header>
+        <section class="container-fluid schedule">
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 day">
+
+                    <h1 class="day_selected">Dia : Segunda</h1>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    
+                        <table class="schedule-box" id="schedule-box">
+                            <tr><td onclick="schedule_hour('blue',0);">0h</td> <td onclick="schedule_hour('pink',1);">1h</td> <td onclick="schedule_hour('yellow',2);">2h</td> <td onclick="schedule_hour('blue',3);">3h</td><td onclick="schedule_hour('pink',4);">4h</td></tr>
+                            <tr><td onclick="schedule_hour('yellow',5);">5h</td> <td onclick="schedule_hour('blue',6);">6h</td> <td onclick="schedule_hour('pink',7);">7h</td> <td onclick="schedule_hour('yellow',8);">8h</td> <td onclick="schedule_hour('blue',9);">9h</td> </tr>
+                            <tr><td onclick="schedule_hour('pink',10);">10h</td> <td onclick="schedule_hour('yellow',11);">11h</td> <td onclick="schedule_hour('blue',12);">12h</td><td onclick="schedule_hour('pink',13);">13h</td> <td onclick="schedule_hour('yellow',14);">14h</td></tr>
+                            <tr><td onclick="schedule_hour('blue',15);">15h</td> <td onclick="schedule_hour('pink',16);">16h</td> <td onclick="schedule_hour('yellow',17);">17h</td> <td onclick="schedule_hour('blue',18);">18h</td> <td onclick="schedule_hour('pink',19);">19h</td></tr>
+                            <tr><td onclick="schedule_hour('yellow',21);">21h</td> <td onclick="schedule_hour('blue',22);">22h</td> <td onclick="schedule_hour('pink',23);">23h</td> <td onclick="schedule_hour('yellow',24);">24h</td> <td class="next-day" id="next-day"> &gt;<span>&gt;</span> </td></tr>
+                        </table>
+                    
+                </div>
+                <div class="col-md-6 col-sm-6">
+                        
+                    <div class="detailed-schedule">
+                        <header>
+                            <h1 class="text-center"> 23Hs </h1>
+                        </header>
+                        <section>
+                            <ul class="list-group">
+                                <li onclick='modal_character_detail(this);' class="hour_1"><span >23:00</span><img class="img-fluid" src="imgs/apenas-um-show.png" alt="apenas um show">Apenas Um Show</li>
+                                <li onclick='modal_character_detail(this);' class="hour_2"><span >23:15</span><img class="img-fluid" src="imgs/apenas-um-show.png" alt="apenas um show">Apenas Um Show</li>
+                                <li onclick='modal_character_detail(this);' class="hour_3"><span >23:30</span><img class="img-fluid" src="imgs/clarencio.jpg" alt="Clarencio o otimista">Clarencio O otimista</li>
+                                <li onclick='modal_character_detail(this);' class="hour_4"><span >23:45</span><img class="img-fluid" src="imgs/clarencio.jpg" alt="Clarencio o otimista">Clarencio O otimista</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                    
+                </div>
+                
+             
+            </div>
+            <footer class="row schedule-footer"> 
+
+                <aside class="col-md-1 col-sm-1">
+                    <button class="previous-character" onclick='previous_character();'> &lt;</button>
+                </aside>
+
+                <div class="col-md-10 col-sm-10 characters">
+                    <ul class="list-group">
+                        <li onclick="modal_character_program_detail('Hora de Aventura');"><img src="imgs/-fin-jake.png"></li>
+                        <li onclick="modal_character_program_detail('O mundo de Gumbal');"><img src="imgs/-gumbal.png"></li>
+                        <li onclick="modal_character_program_detail('Steve Universe');"><img src="imgs/-steven.png"></li>
+                        <li onclick="modal_character_program_detail('Apenas Um Show');"><img src="imgs/-rigby.png"></li>
+                        <li onclick="modal_character_program_detail('Irmao do Jorel');"><img src="imgs/-jorel.png"></li>
+                    </ul>
+                </div>
+
+                <aside class="col-md-1 col-sm-1">
+                    <button class="next-character" onclick='next_character();'> &gt;  </button>
+                </aside>
+            </footer>
+        
+        </section>
+        <footer class="container-fluid cartoon-footer">
+            <div class="row">
+                <aside class="col-md-1 col-sm-1">
+                   
+                        <img src="imgs/logo.svg" alt="Logo Cartoon Network" class="logo-footer">
+                    
+                </aside>
+                <section class="col-md-10 col-sm-10">
+                    <p class="text-center">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    </p>
+                </section>
+                <aside class="col-md-1 col-sm-1">
+
+                </aside>
+            </div>
+            <div class="row">
+                <aside class="col-md-1 col-sm-1"></aside>
+                <ul class="col-md-10 col-sm-10 footer-nav text-center">
+                    <li>guia para pais</li> 
+                    <li>dicas de segurança</li> 
+                    <li>programação</li>
+                    <li>programação efetivamente veiculada</li>
+                    <li>ajuda</li>
+                </ul>
+                <aside class="col-md-1 col-sm-1"></aside>
+            </div>
+        </footer>
+
+        <div class="white_hole">
+
+        </div>
+        <div class="character_detail">
+            <button onclick="close_character_detail();" class="close">x</button>
+            <div class="title">
+                <img src="imgs/jorel.webp">
+                <hgroup>
+                    
+                    <h1>Irmão Do Jorel</h1>
+                    <h3>Jorel's Brother</h3>
+                    Furia Poder Sobre Rodas
+                </hgroup>
+                
+                    <span>10</span>
+                
+            </div>
+            <div class="resume">
+                <h4>Segunda 18</h4><br>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                </p>
+            </div>
+            <div class="detail">
+                <span>Horario de Inicio/Fim:</span> 12:30 - 15:45<br>
+                <span>Ano de Produção:</span> 2018<br>
+                <span>Pais de Origem:</span> Brasil <br>
+                <span>Classificação:</span> Obra Não Publicitaria Brasileira constituite de espaço qualificado e independente<br>
+                <span>Classificação Indicativa:</span> 10<br><br>
+
+                <span>Diretor:</span>Juliano Enrico
+
+            </div>
+        </div>
+        <div class="character_program_detail">
+            <button onclick="close_character_program_detail();" class="close">x</button>
+            <div class="title">
+                
+                <img src="imgs/jorel.webp">
+                <hgroup>
+                    
+                    <h1>Irmão Do Jorel</h1>
+                    <h3>Jorel's Brother</h3>
+                    Furia Poder Sobre Rodas
+                </hgroup>
+                
+                <span>10</span>
+            </div>
+            <div class="resume">
+                <div class="day_hour_1">Sabado<br> 17:00</div>
+                <div class="day_hour_2">Domingo<br> 17:00</div>
+                <div class="day_hour_3">Segunda<br> 18:00</div>
+                <div class="day_hour_4">Terça<br> 17:00</div>
+                <div class="day_hour_5">Quarta<br> 17:00</div>
+                <div class="day_hour_6">Quinta<br> 20:00</div>
+                <div class="day_hour_7">Sexta<br> 21:00</div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: cnbold;
+    src: url('../fonts/CNBold/cn_bold.ttf');
+}
+
+@font-face {
+    font-family: witney;
+    src: url('../fonts/Whitney-Font/whitney-book.otf');
+}
+
+h1,h2,h3,td,.detailed-schedule{
+    font-family: cnbold;
+}
+
+*{
+    font-family: witney;
+}
+
+img{
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}

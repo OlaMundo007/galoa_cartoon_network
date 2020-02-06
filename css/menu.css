@@ -1,0 +1,48 @@
+
+.menu{
+    background-color: rgb(0,0,0);
+    padding: 0px;
+    color: white;
+}
+
+.time-menu{
+    text-align: right;
+}
+
+.footer-menu{
+    background-color: rgb(76,76,76);
+    height: 32px;
+}
+
+.logo img{
+    
+    position: relative;
+    z-index: 2;
+    top: -6px;
+    left: 120px;
+    width: 60px;
+    height: 60px;
+    
+    
+}
+
+.search{
+    
+    margin-top: 2px;
+    border: none;
+    position: relative;
+   
+    
+}
+
+.search .input{
+    background-color: rgb(0,0,0);
+    color: white;
+    border: none;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.img-ads{
+    height: 100px;
+}

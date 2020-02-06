@@ -1,0 +1,24 @@
+
+.cartoon-footer div:nth-child(1){
+    padding-top: 30px;
+    background-color: rgb(76,76,76);
+    color: white;
+}
+
+.cartoon-footer div:nth-child(2){
+    background-color:  black;
+    
+}
+.logo-footer{
+    width: 100px;
+    height: 100px;
+}
+
+.footer-nav li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+    
+}
